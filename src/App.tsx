@@ -1,23 +1,12 @@
 import './App.css'
-import { Link, Route, BrowserRouter as Router, Switch, } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch, } from 'react-router-dom';
+import Menu from './menu';
 
 export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+        <Menu />
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -41,7 +30,7 @@ function Home() {
   return <h2>Home</h2>;
 }
 
-function About() {
+export function About() {
   return (
     <>
       <h2>About</h2>
