@@ -14,11 +14,11 @@ const createRouter = (
     <Router history={history}>
     {children}
 
-    <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+      </Switch>
     </Router>
   )
 }
